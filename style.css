@@ -1,0 +1,273 @@
+/* -------  General Styles ------- */
+
+body {
+    font-family: "Lato", sans-serif;
+    padding-right: 0px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  p {
+    line-height: 1.5em;
+    margin: 0;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  section.alternate-background {
+    background-color: #00a699;
+    color: #fff;
+  }
+  
+  main img {
+    width: 100%;
+  }
+  
+  /* ---  Groups & Items --- */
+  
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .item-double {
+    flex: 2;
+  }
+  
+  /* -------  Navigation ------- */
+  
+  header {
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-family: "Pangolin", cursive;
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul {
+    display: flex; /* by default diplays 'flex-direction' in single row */
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none; /* removes bullet points */
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none; /* removes underline from link*/
+    padding-left: 15px;
+  }
+  
+  header nav ul li a:hover {
+    color: #bdbdbd;
+    text-decoration: none;
+  }
+  
+  .col {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 33px;
+  }
+  
+  .second-column {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  section {
+    padding: 18px;
+    flex-direction: column;
+  }
+  
+  img {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  
+  /* -------  Search Form ------- */
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    align-items: center ;
+  
+  }
+  
+  form select,
+  form input {
+    margin-bottom: 20px;
+    margin-top:10px;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  form > div {
+    /* align form info on single line, rather than stacked in desktop view */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* -------  Footer ------- */
+  
+  footer {
+    background-color: #ff385c;
+  }
+  
+  footer p {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* -------  Media Query ------- */
+  
+  
+  @media all and (min-width: 480px) {
+    body {
+      padding-right: 0px;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #menu {
+      font-size: 80%;
+    }
+  
+    form {
+      /* display: flex;
+      flex-wrap: wrap; */
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 50%;
+    }
+  
+    form label {
+      display: flex;
+      padding-right: 10px;
+    }
+  
+    form input {
+      width: 95%;
+      font-size: large;
+    }
+  
+    form > div {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+  
+    form button {
+      width: 100%;
+      display: inline-flex;
+      justify-content: flex-end;
+      /* margin-left: 100px; */
+      /* font-size: small; */
+    }
+  
+    .criteria {
+      flex-direction: row;
+    }
+  
+    .row {
+      display: flex;
+    }
+  
+    #ideas .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .col {
+      padding-top: 20px;
+      padding-bottom: 0px;
+    }
+  
+    .column {
+      flex: 33.33%;
+      margin: auto 0;
+      margin-left: 20px;
+      font-size: small;
+      align-items: center;
+    }
+  
+    .area-single {
+      display: flex;
+      flex: 1;
+    }
+  
+    .area-double {
+      display: flex;
+      flex: 2;
+    }
+  
+    /* ------- ideas -------*/
+  
+    .about-host-background h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media all and (min-width: 480px) {
+    form {
+  
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 50%;
+    }
+  }
